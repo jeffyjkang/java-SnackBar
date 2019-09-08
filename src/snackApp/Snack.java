@@ -50,7 +50,7 @@ public class Snack {
         this.quantity = this.quantity - quantity;
     }
 
-    public int getTotalCost(int quantity) {
+    public double getTotalCost(int quantity) {
         return cost * quantity;
     }
 
