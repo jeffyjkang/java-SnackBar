@@ -10,7 +10,7 @@ public class Customer {
         maxId++;
         id = maxId;
         this.name = name;
-        this.cashOnHand = cashOnHang;
+        this.cashOnHand = cashOnHand;
     }
 
     public int getId() {
@@ -37,4 +37,9 @@ public class Customer {
         return cashOnHand;
     }
 
+    @Override
+    public String toString() {
+        String rtnStr = "name: " + name + "\n" + "cash on hand: " + cashOnHand + "\n";
+        return rtnStr;
+    }
 }

@@ -50,8 +50,15 @@ public class Snack {
         this.quantity = this.quantity - quantity;
     }
 
-    public int getTotalCost(int quantity) {
+    public double getTotalCost(int quantity) {
         return cost * quantity;
+    }
+
+    @Override
+    public String toString() {
+        String rtnString = "name: " + name + "\n" + "quantity: " + quantity + "\n" + "cost: " + cost + "\n"
+                + "vending machine id: " + vendingMachineId + "\n";
+        return rtnString;
     }
 
 }
