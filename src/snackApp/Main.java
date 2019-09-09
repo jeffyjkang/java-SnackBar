@@ -66,6 +66,39 @@ public class Main {
         snack3.buySnack(3); // decrement quantity of snack
         System.out.println("c2 cash on hand: " + cust2.getCashOnHand() + "\n"); // print cash on hand
         System.out.println("snack3 qty: " + snack3.quantity() + "\n"); // print quantity of snack
+        // Stretch. Display each snack with name, vending machine name, qty on hand,
+        // total cost of all qtys of this snack on hand
+        snack1.setVendingMachineName(vend1.getName()); // set vend name on snack
+        snack2.setVendingMachineName(vend1.getName()); // set vend name on snack
+        snack3.setVendingMachineName(vend1.getName()); // set vend name on snack
+        snack4.setVendingMachineName(vend2.getName()); // set vend name on snack
+        snack5.setVendingMachineName(vend2.getName()); // set vend name on snack
+        System.out.println("snack1 name: " + snack1.getName()); // get name of snack
+        System.out.println("snack1 vending machine name: " + snack1.getVendingMachineName()); // get name of vend name
+        System.out.println("snack1 qty on hand: " + snack1.quantity()); // get qty of snacks
+        System.out.println("snack1 total cost of snacks on hand: $" + snack1.getTotalCost(snack1.quantity()));
+        // get cost of snacks
+        System.out.println("snack2 name: " + snack2.getName()); // get name of snack
+        System.out.println("snack2 vending machine name: " + snack2.getVendingMachineName()); // get name of vend name
+        System.out.println("snack2 qty on hand: " + snack2.quantity()); // get qty of snacks
+        System.out.println("snack2 total cost of snacks on hand: $" + snack2.getTotalCost(snack2.quantity()));
+        // get cost of snacks
+        System.out.println("snack3 name: " + snack3.getName()); // get name of snack
+        System.out.println("snack3 vending machine name: " + snack3.getVendingMachineName()); // get name of vend name
+        System.out.println("snack3 qty on hand: " + snack3.quantity()); // get qty of snacks
+        System.out.println("snack3 total cost of snacks on hand: $" + snack3.getTotalCost(snack3.quantity()));
+        // get cost of snacks
+        System.out.println("snack4 name: " + snack4.getName()); // get name of snack
+        System.out.println("snack4 vending machine name: " + snack4.getVendingMachineName()); // get name of vend name
+        System.out.println("snack4 qty on hand: " + snack4.quantity()); // get qty of snacks
+        System.out.println("snack4 total cost of snacks on hand: $" + snack4.getTotalCost(snack4.quantity()));
+        // get cost of snacks
+        System.out.println("snack5 name: " + snack5.getName()); // get name of snack
+        System.out.println("snack5 vending machine name: " + snack5.getVendingMachineName()); // get name of vend name
+        System.out.println("snack5 qty on hand: " + snack5.quantity()); // get qty of snacks
+        System.out.println("snack5 total cost of snacks on hand: $" + snack5.getTotalCost(snack5.quantity()));
+        // get cost of snacks
+
     }
 
     public static void main(String[] args) {
