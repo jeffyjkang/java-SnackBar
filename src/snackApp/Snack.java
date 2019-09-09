@@ -7,6 +7,7 @@ public class Snack {
     private int quantity;
     private double cost;
     private int vendingMachineId;
+    private String vendingMachineName;
 
     public Snack(String name, int quantity, double cost, int vendingMachineId) {
         maxId++;
@@ -54,6 +55,16 @@ public class Snack {
         return cost * quantity;
     }
 
+    // stretch vending machine name
+    public String getVendingMachineName() {
+        return vendingMachineName;
+    }
+
+    public void setVendingMachineName(String vendingMachineName) {
+        this.vendingMachineName = vendingMachineName;
+    }
+
+    //
     @Override
     public String toString() {
         String rtnString = "name: " + name + "\n" + "quantity: " + quantity + "\n" + "cost: " + cost + "\n"
